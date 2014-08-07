@@ -1,6 +1,6 @@
 var async = require('async');
 
-exports.doSomethingFun = function doSomethingFun(msg){
+exports.doSomethingFun = function(msg){
     msg = msg || '';
     console.log("I'm doing something fun!" + msg);
 };
@@ -14,7 +14,7 @@ exports.doSomethingFunInParallel = function(){
 
     function somethingFunInParallel(callback){
         setTimeout(function(){
-            doSomethingFun(" (In parallel) ");
+            exports.doSomethingFun(" (In parallel) ");
             callback();
         }, 100);
     }
