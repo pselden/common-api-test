@@ -1,6 +1,6 @@
 {
   "name": "common-api-test",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Testing a common api using tags.",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/pselden/common-api-test/issues"
   },
-  "homepage": "https://github.com/pselden/common-api-test"
+  "homepage": "https://github.com/pselden/common-api-test",
+  "dependencies": {
+    "async": "~0.9.0"
+  }
 }
